@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    background-color: #170b2c;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+nav a{
+    cursor: pointer;
+}
+footer{
+    background-color: #170b2c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 5%;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+#me {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+#main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 85%;
+    background-color: #0f061a;
+}
+#about-me {
+    width: 100%;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10%;
+    color: white;
+}
+#about-me h1{
+    font-size: 36px;
+}
+.word {
+    background: linear-gradient(170deg, #a17fd1, #301350);
+    background-clip:inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: auto;
+}
+
+#experience {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    color: white;
+}
+#experience h1{
+    font-size: 30px;
+    text-align: center;
+}
+#projects h1{
+    font-size: 30px;
+}
+#experience h2{
+    font-size: 16px;
+}
+#experience-content {
+    background: linear-gradient(170deg, #a17fd1, #301350);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#school-logo{
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+}
+
+#projects {
+    grid-column: 2;
+    grid-row: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projects-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#WordWizzWeb{
+    width: 50%;
+    background: linear-gradient(170deg, #a17fd1, #301350);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#WordWizzApp{
+    width: 50%;
+    background: linear-gradient(to right, #301350, #a17fd1, #301350);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#WordWizzApp a{
+    color: purple;
+}
+#WordWizzWeb a{
+    color: purple;
+}
+
+#tools {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#tools h1{
+    font-size: 30px;
+}
+#tools-content{
+    height: auto;
+
+    display: flex;
+    animation: tools-content 10s linear infinite;
+}
+#tools-content img{
+    height: 100px;
+    margin: 0 20px
+}
+@keyframes tools-content {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.highlight{
+    background-color: rgb(58, 2, 80);
+    transition: background-color 0.5s ease;
+}
+#flags {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
